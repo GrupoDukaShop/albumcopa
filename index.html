@@ -123,7 +123,7 @@ section{position:relative;z-index:1}
 .ts{color:#f5a623;font-size:15px;margin-bottom:12px;letter-spacing:2px}
 .tc p{font-size:15px;color:#444;line-height:1.6;font-weight:500;margin-bottom:20px;font-style:italic}
 .ta{display:flex;align-items:center;gap:12px}
-.av{width:46px;height:46px;border-radius:50%;background:var(--green);border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.av{width:46px;height:46px;border-radius:50%;background:var(--green);border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;overflow:hidden}
 .an{font-weight:700;font-size:14px;color:var(--blue)}
 .ar{font-size:12px;color:#888;font-weight:600}
 
@@ -178,9 +178,31 @@ footer a:hover{color:var(--yellow)}
 .rev.in{opacity:1;transform:none}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4234477643457645');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4234477643457645&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
-<body>
+<body onload="fbq('track', 'ViewContent', {content_name: 'Álbum de Colorir Copa 2026', content_category: 'Livro Digital', value: 15.00, currency: 'BRL'})">
 
+<!-- TOPBAR -->
+<div class="topbar">
+  ⏰ Oferta expira em: <span class="tmr" id="tmr">29:59</span>
+  <strong>|</strong> Álbum de colorir com +30 desenhos por apenas R$15!
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -202,7 +224,7 @@ footer a:hover{color:var(--yellow)}
         <div class="price-new"><sup>R$</sup>15<sup>,00</sup></div>
         <div class="price-note">+30 desenhos para colorir · Acesso imediato · PDF para imprimir</div>
       </div>
-      <a href="https://pay.cakto.com.br/37oj6xq_921364" class="btn btn-y">⚽ QUERO O ÁLBUM AGORA!</a>
+      <a href="https://pay.cakto.com.br/37oj6xq_921364" onclick="fbq('track', 'InitiateCheckout', {value: 15.00, currency: 'BRL', num_items: 1})" class="btn btn-y">⚽ QUERO O ÁLBUM AGORA!</a>
       <div class="trust">
         <span class="tp"><span class="dot"></span>Pagamento seguro</span>
         <span class="tp"><span class="dot"></span>Acesso imediato</span>
@@ -305,7 +327,7 @@ footer a:hover{color:var(--yellow)}
       </div>
     </div>
     <div style="text-align:center;margin-top:50px" class="rev">
-      <a href="https://pay.cakto.com.br/37oj6xq_921364" class="btn btn-y">⚽ QUERO O ÁLBUM POR R$15</a>
+      <a href="https://pay.cakto.com.br/37oj6xq_921364" onclick="fbq('track', 'InitiateCheckout', {value: 15.00, currency: 'BRL', num_items: 1})" class="btn btn-y">⚽ QUERO O ÁLBUM POR R$15</a>
       <div style="color:rgba(255,255,255,.4);font-size:13px;font-weight:700;margin-top:14px">Acesso imediato · PDF para imprimir à vontade</div>
     </div>
   </div>
@@ -361,7 +383,7 @@ footer a:hover{color:var(--yellow)}
       <div class="oold">De R$ 49,99</div>
       <div class="oprice"><sup>R$</sup>15<sup>,00</sup></div>
       <div class="onote">Pagamento único · Sem mensalidade · Para sempre seu</div>
-      <a href="https://pay.cakto.com.br/37oj6xq_921364" class="btn btn-y" style="font-size:1.5rem;padding:20px 44px">⚽ QUERO O MEU ÁLBUM AGORA!</a>
+      <a href="https://pay.cakto.com.br/37oj6xq_921364" onclick="fbq('track', 'InitiateCheckout', {value: 15.00, currency: 'BRL', num_items: 1})" class="btn btn-y" style="font-size:1.5rem;padding:20px 44px">⚽ QUERO O MEU ÁLBUM AGORA!</a>
       <div class="sec-row">
         <span class="sri">🔒 Pagamento seguro</span>
         <span class="sri">⚡ Entrega imediata</span>
@@ -393,7 +415,7 @@ footer a:hover{color:var(--yellow)}
 <section class="final">
   <h2>⚽ Bora pro Hexa!</h2>
   <p>Álbum com +30 desenhos por R$15 — acesso imediato, imprima à vontade!</p>
-  <a href="https://pay.cakto.com.br/37oj6xq_921364" class="btn" style="background:#fff;color:var(--green-d);box-shadow:0 6px 0 rgba(0,0,0,.2),0 12px 30px rgba(0,0,0,.15);font-size:1.5rem;position:relative">🎉 COMPRE O ÁLBUM AGORA!</a>
+  <a href="https://pay.cakto.com.br/37oj6xq_921364" onclick="fbq('track', 'InitiateCheckout', {value: 15.00, currency: 'BRL', num_items: 1})" class="btn" style="background:#fff;color:var(--green-d);box-shadow:0 6px 0 rgba(0,0,0,.2),0 12px 30px rgba(0,0,0,.15);font-size:1.5rem;position:relative">🎉 COMPRE O ÁLBUM AGORA!</a>
 </section>
 
 <!-- FOOTER -->
@@ -408,7 +430,7 @@ footer a:hover{color:var(--yellow)}
 
 <!-- STICKY MOBILE -->
 <div class="stick">
-  <a href="https://pay.cakto.com.br/37oj6xq_921364">⚽ BAIXAR O ÁLBUM POR R$15</a>
+  <a href="https://pay.cakto.com.br/37oj6xq_921364" onclick="fbq('track', 'InitiateCheckout', {value: 15.00, currency: 'BRL', num_items: 1})">⚽ BAIXAR O ÁLBUM POR R$15</a>
 </div>
 
 <script>
